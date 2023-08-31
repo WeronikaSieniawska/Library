@@ -72,6 +72,7 @@
             this.lastName.Size = new System.Drawing.Size(125, 25);
             this.lastName.TabIndex = 3;
             this.lastName.Text = "Last name: ";
+            this.lastName.Click += new System.EventHandler(this.lastName_Click);
             // 
             // email
             // 
@@ -102,6 +103,7 @@
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(257, 30);
             this.textBoxFirstName.TabIndex = 6;
+            this.textBoxFirstName.TextChanged += new System.EventHandler(this.textBoxFirstName_TextChanged);
             // 
             // textBoxLastName
             // 
@@ -110,6 +112,7 @@
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(257, 30);
             this.textBoxLastName.TabIndex = 7;
+            this.textBoxLastName.TextChanged += new System.EventHandler(this.textBoxLastName_TextChanged);
             // 
             // textBoxEmail
             // 

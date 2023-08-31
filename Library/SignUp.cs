@@ -71,11 +71,11 @@ namespace Library
 
                 if(row == 1)
                 {
-                    MessageBox.Show("Account Created Successfully.");
+                    MessageBox.Show("Account Created Successfully. Please login now");
 
                     this.Hide();
-                    HomePage home = new HomePage();
-                    home.Show();
+                    SignIn sign = new SignIn();
+                    sign.Show();
                 }
                 else
                 {
@@ -109,6 +109,21 @@ namespace Library
             this.Hide();
             SignIn signIn = new SignIn();
             signIn.Show();
+        }
+
+        private void textBoxFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lastName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxLastName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

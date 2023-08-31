@@ -56,11 +56,9 @@ namespace Library
                 adapter.SelectCommand.CommandType = CommandType.Text;
                 SqlCommandBuilder DbCommandBuilder = new SqlCommandBuilder(adapter);
 
-
                 string insert = DbCommandBuilder.GetInsertCommand().CommandText.ToString();
                 string update = DbCommandBuilder.GetUpdateCommand().CommandText.ToString();
                 string delete = DbCommandBuilder.GetDeleteCommand().CommandText.ToString();
-
 
                 return adapter.Update(tblName);
             }
